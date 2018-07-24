@@ -7,10 +7,10 @@ You can think of this kind of implementations as a proxy middleman that is trans
 # Hooks that can be received from Click2Sync
 
 1. GET {{URI_PRODUCTS}}
-    1.1. with offset (int)
-    1.2. with sortorder param (asc, desc)
-    1.3. with id param (string)
-    1.4. with next param (step string tag)
+    * with offset (int)
+    * with sortorder param (asc, desc)
+    * with id param (string)
+    * with next param (step string tag)
 
 2. GET {{URI_ORDERS}}
     2.1. with offset (int)
