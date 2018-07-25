@@ -13,18 +13,18 @@ You can think of this kind of implementations as a proxy middleman that is trans
     * with next param (step string tag)
 
 2. GET {{URI_ORDERS}}
-    2.1. with offset (int)
-    2.2. with sortorder param (asc, desc)
-    2.3. with id param (string)
-    2.4. with next param (step string tag)
+    * with offset (int)
+    * with sortorder param (asc, desc)
+    * with id param (string)
+    * with next param (step string tag)
 
 3. POST {{URI_PRODUCTS}}
-    3.1. without id (CREATE)
-    3.2. with id (UPDATE)
+    * without id (CREATE)
+    * with id (UPDATE)
 
 4. POST {{URI_ORDERS}}
-    4.1. without id (CREATE)
-    4.2. with id (UDPATE)
+    * without id (CREATE)
+    * with id (UDPATE)
 
 # Authentication
 
