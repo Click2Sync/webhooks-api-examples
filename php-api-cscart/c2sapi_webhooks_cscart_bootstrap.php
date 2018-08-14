@@ -31,6 +31,9 @@ function buildCSCartObjectFromUniversal($universal){
 	}
 	if(isset($universal->variations[0]->availabilities[0]->quantity)){
 		$obj->amount = $universal->variations[0]->availabilities[0]->quantity;
+		if($obj->amount < 0){
+			$obj->amount = 0;
+		}
 	}
 	if(isset($universal->variations[0]->prices[0]->number)){
 		$obj->price = $universal->variations[0]->prices[0]->number;
@@ -59,7 +62,9 @@ function buildCSCartObjectFromUniversal($universal){
 			}
 		}
 	}
-	$obj->category_ids = $defaultcategoryids;
+	if(!isset($universal->_id)){//is new, add default category
+		$obj->category_ids = $defaultcategoryids;
+	}
 
 	if(isset($universal->brand)){
 		//GET search for feature, with description brand
