@@ -1,5 +1,5 @@
-# PHP + CSCart API Example
-Click2Sync Webhooks API Implementation bootstrap template of a CSCart integration with a PHP proxy/translator.
+# PHP + Bigcommerce API Example
+Click2Sync Webhooks API Implementation bootstrap template of a BigCommerce integration with a PHP proxy/translator.
 
 # Similar to
 This implementation is similar to the OpenCart, Magento1, Magento2, VTEX integrations
@@ -7,13 +7,13 @@ This implementation is similar to the OpenCart, Magento1, Magento2, VTEX integra
 # Setup
 
 1. Adapt the code to your needs, credentials, etc.
-2. Upload the PHP script into a public path of yours (your CSCart installation folder, a folder on a hosted web server, etc.)
+2. Upload the PHP script into a public path of yours (on a hosting folder or some PHP enabled server)
 
 # Example config
 
 1. Hostname: http://www.example.com/
-2. Products Endpoint: /c2sapi_webhooks_cscart_bootstrap.php?entity=products
-3. Orders Endpoint: /c2sapi_webhooks_cscart_bootstrap.php?entity=orders
+2. Products Endpoint: /c2sapi_webhooks_bigcommerce_bootstrap.php?entity=products
+3. Orders Endpoint: /c2sapi_webhooks_bigcommerce_bootstrap.php?entity=orders
 
 # Authentication
 
